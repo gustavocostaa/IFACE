@@ -173,7 +173,7 @@ public class TLA_inicial {
 				try {
 					frmjanela.getContentPane().setVisible(false);
 					menubar.setVisible(false);
-					frmjanela.setContentPane(ctpjanelaant);
+					frmjanela.setContentPane(frmjanela.getCtppainelinicial());
 					new BD_OP().BD_REMOVERCONTA(usuario);
 					new TLA_avisos().sucesso_removerconta();
 					frmjanela.getContentPane().setVisible(true);
@@ -188,8 +188,10 @@ public class TLA_inicial {
 				try {
 					usuario = new Usuario();
 					frmjanela.getContentPane().setVisible(false);
-					frmjanela.setContentPane(ctpjanelaant);
+					menubar.setVisible(false);
+					frmjanela.setContentPane(frmjanela.getCtppainelinicial());
 					frmjanela.getContentPane().setVisible(true);
+					
 				} catch (Exception e2) {
 					new TLA_avisos().erro_deslogar();
 				}
