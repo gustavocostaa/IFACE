@@ -19,6 +19,7 @@ public class TLA_login extends JFrame {
 	private JFrame frmjanela;
 	private TLA_login tla_login;
 	private JPanel ctppainel;
+	private final JPanel ctppainelinicial;
 
 	private JTextField txtUsuario;
 	private JTextField txtSenha;
@@ -112,6 +113,10 @@ public class TLA_login extends JFrame {
 
 	public JLabel getLblSenha() {
 		return lblSenha;
+	}
+	
+	public JPanel getCtppainelinicial(){
+		return ctppainelinicial;
 	}
 
 	// EndGETS
