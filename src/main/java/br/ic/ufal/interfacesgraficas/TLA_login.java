@@ -95,6 +95,8 @@ public class TLA_login extends JFrame {
 				new TLA_cadastro(tla_login);
 			}
 		});
+		
+		ctppainelinicial= ctppainel;
 
 	}
 
